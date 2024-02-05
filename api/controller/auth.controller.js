@@ -14,7 +14,7 @@ const signUp = async (req, res, next) => {
             message: "User created successfully"
         })
     } catch (error) {
-        next(errorHandler(error))
+        next(error)
     }
 }
 
